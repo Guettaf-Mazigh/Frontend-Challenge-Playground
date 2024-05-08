@@ -104,3 +104,11 @@ svg{
   grid-row: 3/5;
 }
 
+@media (max-width : 700px){
+  .cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
