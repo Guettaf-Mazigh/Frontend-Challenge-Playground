@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono&family=Ubuntu&display=swap");
+* {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-optical-sizing: auto;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  height: 450px;
+  width: 600px;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: 5px 10px 20px hsl(221, 100%, 96%);
+}
+
+.left {
+  background-image: linear-gradient(to top,hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  min-width: 50%;
+}
+
+.result {
+  text-align: center;
+  margin: 25px 0;
+  font-weight: 500;
+  font-size: 1.2em;
+  color: hsl(241, 100%, 89%);
+  letter-spacing: 0.5px;
+}
+
+.circle {
+  height: 150px;
+  width: 150px;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+  border-radius: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 30px auto;
+}
+
+.percentage {
+  font-size: 3.5em;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.of100 {
+  color: hsla(241, 100%, 89%, 0.616);
+}
+
+.great {
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  font-size: 1.8em;
+  font-weight: 500;
+}
+
+.descreption {
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: hsl(241, 100%, 89%);
+  margin-top: 15px;
+}
+
+.left span {
+  display: block;
+}
+
+.right {
+  padding: 0 20px;
+  width: 50%;
+  display: grid;
+}
+.right div {
+  color: rgba(128, 128, 128, 0.726);
+}
+
+.element {
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  font-size: 1.1em;
+  height: 55px;
+}
+
+button {
+  border: none;
+  height: 50px;
+  background-color: hsl(224, 30%, 27%);
+  border-radius: 30px;
+  color: hsl(0, 0%, 100%);
+  letter-spacing: 0.5px;
+  margin: 30px 0;
+}
+
+button:hover {
+  background-image: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+  cursor:pointer;
+  
+}
+
+h2 {
+  margin: 25px 0;
+  color: hsl(224, 30%, 27%);
+}
+
+#element1 {
+  color: hsl(0, 100%, 67%);
+  background-color: hsla(0, 100%, 67%, 0.041);
+}
+
+#element2 {
+  color: hsl(39, 100%, 56%);
+  background-color: hsla(39, 100%, 56%, 0.055);
+}
+
+#element3 {
+  color: hsl(166, 100%, 37%);
+  background-color: hsla(166, 100%, 37%, 0.055);
+}
+
+#element4 {
+  color: hsl(234, 85%, 45%);
+  background-color: hsla(234, 85%, 45%, 0.055);
+}
+
+svg{
+  margin-right: 10px;
+}
+.pouc {
+  color: black;
+  font-weight: 700;
+}
+
+
+@media (max-width: 400px) {
+  section {
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    height: auto; 
+    min-width: 600px;
+    margin: auto; 
+    padding: 20px;
+  }
+  .left{
+    padding-bottom: 30px;
+  }
+}
